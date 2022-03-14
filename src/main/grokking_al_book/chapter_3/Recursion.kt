@@ -60,6 +60,9 @@ fun main() {
     val myList = listOf(1, 3, 5, 7, 9)
     val myList2 = intArrayOf(1, 3, 5, 7, 9, 2, 5, 4)
 
+    /**
+     * divide and conquer
+     * */
     recursiveOnNum(10)
     println(recursiveFactorial(5))
     println(recursiveCount(myList))
