@@ -24,12 +24,15 @@ private fun binarySearch(list: List<Int>, searchItem: Int): Int {
 
 private fun recursiveBinarySearch(list: IntArray, item: Int, start: Int, end: Int = list.size - 1): Int? {
 
+    // base case
     if (start > end)
         return null
 
     val mid = (start + end) / 2
     val guess: Int = list[mid]
     if (guess == item) return mid
+
+    // recursive case
     return if (guess > item) {
         recursiveBinarySearch(list, item, start, mid - 1)
     } else {
