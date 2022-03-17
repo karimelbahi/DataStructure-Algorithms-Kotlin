@@ -24,7 +24,7 @@ private fun findLowestCostNode(costs: Map<String, Double>): String? {
     return newCostNode
 }
 
-private fun breadthFirstSearch(costs: MutableMap<String, Double>, parents: MutableMap<String, String?>) {
+private fun dijkstra(costs: MutableMap<String, Double>, parents: MutableMap<String, String?>) {
 
     // lowest const starting from the beginning node
     var node = findLowestCostNode(costs)
@@ -79,7 +79,7 @@ fun main() {
     parents["b"] = "start"
     parents["fin"] = null
 
-    breadthFirstSearch(costs, parents)
+    dijkstra(costs, parents)
     println("Cost from the start to each node:")
     println(costs) // { a: 5, b: 2, fin: 6 }
 }
