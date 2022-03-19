@@ -2,37 +2,37 @@
 ## Sources
 #### Books
 - Grokking Algorithms by Aditya Y. Bhargava
-    - :white_check_mark: - Chapter 1 
+    -  Chapter 1 :white_check_mark: 
          - Binary Search
-     :white_check_mark: - Chapter 2
+     -  Chapter 2 :white_check_mark:
         - Selection sort
-     :white_check_mark: - Chapter 3
+     -  Chapter 3 :white_check_mark:
         - Recursion
             - logger
             - factorial
             - matrix size
             - maximum number
             - matrix summation
-     :white_check_mark: - Chapter 4
+     -  Chapter 4 :white_check_mark:
         - Quick sort 
-     :white_check_mark: - Chapter 5
+     -  Chapter 5 :white_check_mark:
         - Hash Tables
             - checkVoter
             - check categories prices
             - cachedSites
-     :white_check_mark: - Chapter 6
+     -  Chapter 6 :white_check_mark:
         - Breadth first search
             - shortest path problem example
-     :white_check_mark: - Chapter 7
+     -  Chapter 7 :white_check_mark:
         - Dijkstra Algorithm 
             - shortest path with minimum cost problem example
-     :white_check_mark: - Chapter 8
+     -  Chapter 8 :white_check_mark:
         - Greedy Algorithm
             - covering stations problem example
-     :white_check_mark: - Chapter 9
+     -  Chapter 9 :white_check_mark:
          - Greedy Algorithm
            - longest common substring example
            - longest common subsequence example
            - knapsack problem example
-     :white_check_mark: - Chapter 10
+     -  Chapter 10 :white_check_mark:
          - K-nearest-neighbors
