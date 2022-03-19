@@ -2,7 +2,7 @@
 ## Sources
 #### Books
 - Grokking Algorithms by Aditya Y. Bhargava
-     :white_check_mark: - Chapter 1 
+    - :white_check_mark: - Chapter 1 
          - Binary Search
      :white_check_mark: - Chapter 2
         - Selection sort
