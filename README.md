@@ -1,7 +1,7 @@
 # DataStructure-Algorithms-Kotlin
 ## Sources
 #### Books
-- Grokking Algorithms by Aditya Y. Bhargava
+-  [Grokking Algorithms by Aditya Y. Bhargava](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230)
     - :white_check_mark: - Chapter 1 
          - Binary Search
     - :white_check_mark: - Chapter 2
