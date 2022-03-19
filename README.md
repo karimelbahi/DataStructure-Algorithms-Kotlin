@@ -2,8 +2,9 @@
 ## Sources
 #### Books
 - Grokking Algorithms by Aditya Y. Bhargava
-    - :white_check_mark: - Chapter 1 
-         - Binary Search
+     1. First list item :white_check_mark:
+        - First nested list item
+          - Second nested list item
     - :white_check_mark: - Chapter 2
         - Selection sort
     - :white_check_mark: - Chapter 3
