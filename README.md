@@ -40,8 +40,4 @@
 
 
 #### Other Symbol
-
-| | ico | shortcode | ico | shortcode | |
-| - | :-: | - | :-: | - | - |
-
-| [top](#symbols) | :o: | `:o:` | :white_check_mark: | `:white_check_mark:` | [top](#table-of-contents) |
+ :white_check_mark:
