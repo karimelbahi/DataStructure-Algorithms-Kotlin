@@ -7,35 +7,41 @@
 - [Grokking Algorithms by Aditya Y. Bhargava](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230)
     - [x] Chapter 1 
          - Binary Search
+           - loop binary search
+           - recursive binary search
     - [x] Chapter 2
         - Selection sort
+           - loop selection sort
+           - recursive selection sort
     - [x] Chapter 3
         - Recursion
-            - logger
-            - factorial
-            - matrix size
-            - maximum number
-            - matrix summation
+          - logger
+          - factorial
+          - matrix size
+          - maximum number
+          - matrix summation
     - [x] Chapter 4
-        - Quick sort 
+        - Quick sort
+          - loop quick sort
+          - recursive quick sort
     - [x] Chapter 5
         - Hash Tables
-            - checkVoter
-            - check categories prices
+          - checkVoter
+          - check categories prices
             - cachedSites
     - [x] Chapter 6
         - Breadth first search
-            - shortest path problem example
+          - shortest path problem
     - [x] Chapter 7
         - Dijkstra Algorithm 
-            - shortest path with minimum cost problem example
+          - shortest path with minimum cost problem
     - [x] Chapter 8
         - Greedy Algorithm
-            - covering stations problem example
+          - covering stations problem
     - [x] Chapter 9
          - Greedy Algorithm
-           - longest common substring example
-           - longest common subsequence example
-           - knapsack problem example
+          - longest common substring
+          - longest common subsequence
+          - knapsack problem
     - [x] Chapter 10
          - K-nearest-neighbors
