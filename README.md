@@ -47,4 +47,4 @@
          - K-nearest-neighbors
 
 - [Data Structures & Algorithms in Kotlin by Irina Galata (Author), Matei Suica (Author)](https://www.amazon.com/Data-Structures-Algorithms-Kotlin-First/dp/1942878915)
-    - [x] Chapter 1 
+    - [ ] Chapter 1 
