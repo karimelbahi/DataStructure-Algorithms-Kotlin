@@ -39,7 +39,7 @@
         - Greedy Algorithm
           - covering stations problem
     - [x] Chapter 9
-         - Greedy Algorithm
+         - Dynamic programming
           - longest common substring
           - longest common subsequence
           - knapsack problem
