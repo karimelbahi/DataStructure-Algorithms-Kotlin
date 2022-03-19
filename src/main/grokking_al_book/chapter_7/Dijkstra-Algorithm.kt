@@ -56,6 +56,7 @@ private fun dijkstra(costs: MutableMap<String, Double>, parents: MutableMap<Stri
 
 fun main() {
 
+    // shortest path with minimum cost
     // graph of the paths table
     graph["start"] = HashMap()
     graph["start"]?.set("a", 6.0)

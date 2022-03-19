@@ -26,6 +26,7 @@ fun `longest common subsequence examble`(wordA: String, wordB: String, wordC: St
 //    [0, 0, 2, 0, 0]
 //    [0, 0, 0, 0, 0]
 }
+
 fun longestCommonSubsequence(wordA: String, wordB: String): Array<IntArray> {
 
     val cell = Array(wordA.length + 1) { IntArray(wordB.length + 1) }
@@ -77,6 +78,7 @@ private fun `longest common substring examble`(wordA: String, wordB: String, wor
 
 
 }
+
 private fun longestCommonSubstring(wordA: String, wordB: String): Array<IntArray> {
     val cell = Array(wordA.length) { IntArray(wordB.length) }
     for (i in wordA.indices) {
@@ -103,6 +105,74 @@ private fun printResult(arr: Array<IntArray>) {
 }
 
 
+private fun `knapsack problem solution`() {
+    val guitar = Item("Guitar", 1500, 1)
+    val stereo = Item("Stereo", 3000, 4)
+    val laptop = Item("Laptop", 2000, 3)
+    val iphone = Item("Iphone", 2000, 1)
+
+    val water = Item("Water", 10, 3)
+    val book = Item("Book", 3, 1)
+    val food = Item("Food", 9, 2)
+    val jacket = Item("Jacket", 5, 2)
+    val camera = Item("Camera", 6, 1)
+
+    println(knapsack(listOf(guitar, stereo, laptop), 4).items)
+    println(knapsack(listOf(stereo, laptop, guitar), 4).items)// to verify that if we change the order, result should stay the same
+    println(knapsack(listOf(guitar, stereo, laptop, iphone), 4).items)
+    println(knapsack(listOf(guitar, stereo, laptop, iphone), 5).items)
+    println(knapsack(listOf(water, book, food, jacket, camera), 6).items)
+}
+
+data class Item(val name: String, val value: Int, val spaceTaken: Int)
+data class KnapsackSolution(val items: List<Item>, val totalValue: Int) : Comparable<KnapsackSolution> {
+    operator fun plus(rhs: KnapsackSolution): KnapsackSolution {
+        return KnapsackSolution(items + rhs.items, totalValue + rhs.totalValue)
+    }
+
+    override operator fun compareTo(other: KnapsackSolution): Int {
+        return totalValue.compareTo(other.totalValue)
+    }
+}
+private typealias KnapsackGrid = List<List<KnapsackSolution>>
+
+private fun KnapsackGrid.get(row: Int, column: Int): KnapsackSolution {
+    return this.getOrElse(row) {
+        emptyList()
+    }.getOrElse(column) {
+        EMPTY_KNAPSACK
+    }
+}
+
+private val EMPTY_KNAPSACK = KnapsackSolution(emptyList(), 0)
+fun knapsack(items: List<Item>, knapsackCapacity: Int): KnapsackSolution {
+    val solutions = mutableListOf<List<KnapsackSolution>>()
+
+    for (i in items.indices) {
+        val item = items[i]
+        val row = mutableListOf<KnapsackSolution>()
+        solutions.add(row)
+        for (capacity in 0 until knapsackCapacity) {
+            row.add(findMax(solutions, item, i, capacity)) //i => row of the graph, capacity => column of the graph
+        }
+    }
+
+    return solutions.last().last() // return last object of last list (last KnapsackSolution of the grid)
+}
+
+private fun findMax(solutions: KnapsackGrid, item: Item, row: Int, column: Int): KnapsackSolution {
+    val previousMax = solutions.get(row - 1, column) // first part of the formula
+
+    val spaceTaken = item.spaceTaken
+    val capacity = column + 1 // there are a relation between the capacity an the column, it is capacity always equal column plus one (check it from the figure)
+    val current = if (spaceTaken <= capacity) { // second part of the formula
+        KnapsackSolution(listOf(item), item.value) + solutions.get(row - 1, (capacity - spaceTaken - 1))  // full capacity - space taken for the current item -1 (-1 because always the wright is more than the column by one)
+    } else {
+        EMPTY_KNAPSACK
+    }
+
+    return maxOf(previousMax, current) // apply the formula (compare between first and second rule)
+}
 
 fun main() {
 
@@ -120,6 +190,8 @@ fun main() {
 
     `longest common subsequence examble`(wordA, wordB, wordC)
 
+    println("-------------")
+
+    `knapsack problem solution`()
 
 }
-

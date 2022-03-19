@@ -76,6 +76,8 @@ data class Person(
 
 fun main() {
 
+    // shortest path
+
     // simple way
     graph["you"] = listOf("alice", "bob", "claire")
     graph["bob"] = listOf("anuj", "peggy")
