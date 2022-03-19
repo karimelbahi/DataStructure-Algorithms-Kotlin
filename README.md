@@ -3,7 +3,7 @@
 - :white_check_mark: [Grokking Algorithms by Aditya Y. Bhargava](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230)
 - :negative_squared_cross_mark: [Data Structures & Algorithms in Kotlin by Irina Galata (Author), Matei Suica (Author)](https://www.amazon.com/Data-Structures-Algorithms-Kotlin-First/dp/1942878915)
 
-## Content
+### Content
 - [Grokking Algorithms by Aditya Y. Bhargava](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230)
     - [x] Chapter 1 
          - Binary Search
