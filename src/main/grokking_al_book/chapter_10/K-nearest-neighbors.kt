@@ -42,4 +42,3 @@ fun main() {
     `k-nearest neighbors`(data, testItem)
 
 }
-
