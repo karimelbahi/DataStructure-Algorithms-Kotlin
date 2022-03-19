@@ -2,7 +2,7 @@ package main.grokking_al_book.chapter_9
 
 
 private var maxCommonSubstring: Int = 0
-fun `longest common subsequence examble`(wordA: String, wordB: String, wordC: String) {
+fun `longest common subsequence example`(wordA: String, wordB: String, wordC: String) {
 
     printResult(longestCommonSubsequence(wordA, wordB))
 
@@ -52,7 +52,7 @@ fun longestCommonSubsequence(wordA: String, wordB: String): Array<IntArray> {
 }
 
 private var maxCommonSubsequence: Int = 0
-private fun `longest common substring examble`(wordA: String, wordB: String, wordC: String) {
+private fun `longest common substring example`(wordA: String, wordB: String, wordC: String) {
 
     val cell = longestCommonSubstring(wordA, wordB)
     printResult(cell)
@@ -184,11 +184,11 @@ fun main() {
 //    val wordB = "babcbad"
 //    val wordC = "babcbad"
 
-    `longest common substring examble`(wordA, wordB, wordC)
+    `longest common substring example`(wordA, wordB, wordC)
 
     println("-------------")
 
-    `longest common subsequence examble`(wordA, wordB, wordC)
+    `longest common subsequence example`(wordA, wordB, wordC)
 
     println("-------------")
 
