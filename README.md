@@ -3,8 +3,8 @@
 - :white_check_mark: [Grokking Algorithms by Aditya Y. Bhargava](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230)
 - :orange_square: [Data Structures & Algorithms in Kotlin by Irina Galata (Author), Matei Suica (Author)](https://www.amazon.com/Data-Structures-Algorithms-Kotlin-First/dp/1942878915)
 
-### implementations
-- [Grokking Algorithms by Aditya Y. Bhargava](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230)
+## implementations
+#### [Grokking Algorithms by Aditya Y. Bhargava](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230)
     - [x] Chapter 1 
          - Binary Search
            - loop binary search
@@ -46,7 +46,7 @@
     - [x] Chapter 10
          - K-nearest-neighbors
 
-- [Data Structures & Algorithms in Kotlin by Irina Galata (Author), Matei Suica (Author)](https://www.amazon.com/Data-Structures-Algorithms-Kotlin-First/dp/1942878915)
+#### [Data Structures & Algorithms in Kotlin by Irina Galata (Author), Matei Suica (Author)](https://www.amazon.com/Data-Structures-Algorithms-Kotlin-First/dp/1942878915)
     - [x] Chapter 1
         - Kotlin Standard Library
           - Null safety
