@@ -15,36 +15,49 @@
            - recursive selection sort
     - [x] Chapter 3
         - Recursion
-          - logger
-          - factorial
-          - matrix size
-          - maximum number
-          - matrix summation
+           - logger
+           - factorial
+           - matrix size
+           - maximum number
+           - matrix summation
     - [x] Chapter 4
         - Quick sort
-          - loop quick sort
-          - recursive quick sort
+           - loop quick sort
+           - recursive quick sort
     - [x] Chapter 5
         - Hash Tables
-          - checkVoter
-          - check categories prices
-            - cachedSites
+           - checkVoter
+           - check categories prices
+           - cachedSites
     - [x] Chapter 6
         - Breadth first search
-          - shortest path problem
+           - shortest path problem
     - [x] Chapter 7
         - Dijkstra Algorithm 
-          - shortest path with minimum cost problem
+           - shortest path with minimum cost problem
     - [x] Chapter 8
         - Greedy Algorithm
-          - covering stations problem
+           - covering stations problem
     - [x] Chapter 9
          - Dynamic programming
-          - longest common substring
-          - longest common subsequence
-          - knapsack problem
+           - longest common substring
+           - longest common subsequence
+           - knapsack problem
     - [x] Chapter 10
          - K-nearest-neighbors
 
 - [Data Structures & Algorithms in Kotlin by Irina Galata (Author), Matei Suica (Author)](https://www.amazon.com/Data-Structures-Algorithms-Kotlin-First/dp/1942878915)
-    - [ ] Chapter 1 
+    - [x] Chapter 1
+        - Kotlin Standard Library
+          - Null safety
+          - Generic
+          - Standard functions
+            - let
+            - run
+            - also
+            - apply
+          - Map
+    - [ ] Chapter 2
+        - Complexity
+            
+              
