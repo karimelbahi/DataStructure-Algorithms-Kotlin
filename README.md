@@ -57,7 +57,9 @@
         - also
         - apply
       - Map
-- [ ] Chapter 2
-    - [Complexity](src/main/data_Structures_algorithms_in_kotlin_book/)
+- [x] Chapter 2
+    - [Complexity](src/main/data_Structures_algorithms_in_kotlin_book/ch2_02_Complexity)
+- [ ] Chapter 3
+    - [Linked List](src/main/data_Structures_algorithms_in_kotlin_book/ch3_03_Linked_List)
         
               
