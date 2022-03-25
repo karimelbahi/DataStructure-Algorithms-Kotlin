@@ -1,6 +1,6 @@
 package main.data_Structures_algorithms_in_kotlin_book.ch3_03_Linked_List
 
-class LinkedList<T> {
+class LinkedListIterable<T : Any> : Iterable<T>{
     private var head: Node<T>? = null
     private var tail: Node<T>? = null
     var size = 0
@@ -24,7 +24,7 @@ class LinkedList<T> {
         size++
     }
 
-    fun pushChain(value: T): LinkedList<T> {
+    fun pushChain(value: T): LinkedListIterable<T> {
         head = Node(value = value, next = head)
         if (tail == null) {
             tail = head
@@ -46,7 +46,7 @@ class LinkedList<T> {
         size++
     }
 
-    fun appendChain(value: T): LinkedList<T> {
+    fun appendChain(value: T): LinkedListIterable<T> {
 // 1
         if (isEmpty()) {
             push(value)
@@ -87,7 +87,7 @@ class LinkedList<T> {
         return newNode
     }
 
-    fun insertChain(value: T, afterNode: Node<T>): LinkedList<T> {
+    fun insertChain(value: T, afterNode: Node<T>): LinkedListIterable<T> {
 // 1
         if (tail == afterNode) {
             append(value)
@@ -145,11 +145,18 @@ class LinkedList<T> {
         return result
     }
 
+    override fun iterator(): Iterator<T> {
+        return LinkedListIterator(this)
+
+    }
+
+
 }
 
 fun main() {
 
-    val list = LinkedList<Int>()
+/*
+    val list = LinkedListIterable<Int>()
     list.push(3)
     list.push(2)
     list.push(1)
@@ -163,7 +170,7 @@ fun main() {
     list.appendChain(7000).appendChain(8000)
     println(list)
 
-    val list2 = LinkedList<Int>()
+    val list2 = LinkedListIterable<Int>()
     list2.push(3)
     list2.push(2)
     list2.push(1)
@@ -191,5 +198,15 @@ fun main() {
     removedValue = list2.removeAfter(node)
     println("After removing at index $index: $list2")
     println("Removed value: $removedValue")
+*/
+
+    val list = LinkedListIterable<Int>()
+    list.push(3)
+    list.push(2)
+    list.push(1)
+    println(list)
+    for (item in list) {
+        println("Double: ${item * 2}")
+    }
 
 }
