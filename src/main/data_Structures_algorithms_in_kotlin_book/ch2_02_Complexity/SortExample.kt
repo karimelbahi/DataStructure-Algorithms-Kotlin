@@ -20,7 +20,7 @@ fun printSorted(numbers: List<Int>) {
     }
     while (currentCount < numbers.size) {
 // 4
-        var currentValue = numbers.max()!!
+        var currentValue = numbers.maxOrNull()!!
         for (value in numbers) {
             if (value < currentValue && value > minValue) {
                 currentValue = value

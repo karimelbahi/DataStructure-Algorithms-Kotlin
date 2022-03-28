@@ -1,4 +1,6 @@
-package main.data_Structures_algorithms_in_kotlin_book.ch3_03_Linked_List
+package main.data_Structures_algorithms_in_kotlin_book.ch3_03_Linked_List.iterable
+
+import main.data_Structures_algorithms_in_kotlin_book.ch3_03_Linked_List.Node
 
 class LinkedListIterable<T : Any> : Iterable<T>{
     private var head: Node<T>? = null
@@ -91,7 +93,7 @@ class LinkedListIterable<T : Any> : Iterable<T>{
 // 1
         if (tail == afterNode) {
             append(value)
-            return this!!
+            return this
         }
 // 2
         val newNode = Node(value = value, next = afterNode.next)
@@ -145,66 +147,29 @@ class LinkedListIterable<T : Any> : Iterable<T>{
         return result
     }
 
+
+    // Iterating through elements
     override fun iterator(): Iterator<T> {
         return LinkedListIterator(this)
 
     }
 
-
 }
 
 fun main() {
 
-/*
     val list = LinkedListIterable<Int>()
+    list.push(5)
+    list.push(4)
     list.push(3)
     list.push(2)
     list.push(1)
 
-    list.pushChain(30).pushChain(20).push(10)
+    println("list before removing $list")
+    list.removeAfter(list.nodeAt(1)!!)
+    list.removeLast()
+    println("list after removing $list")
 
-    list.append(400)
-    list.append(500)
-    list.append(600)
-
-    list.appendChain(7000).appendChain(8000)
-    println(list)
-
-    val list2 = LinkedListIterable<Int>()
-    list2.push(3)
-    list2.push(2)
-    list2.push(1)
-    println("Before inserting: $list2")
-    var middleNode = list2.nodeAt(1)!!
-    for (i in 1..3) {
-        middleNode = list2.insert(-1 * i, middleNode)
-    }
-    println("After inserting: $list2")
-
-    list2.insertChain(100, middleNode).insertChain(5, middleNode)
-    println("After Chain inserting: $list2")
-
-    val poppedValue = list2.pop()
-    println("After popping list2: $list2")
-    println("Popped value: $poppedValue")
-
-    var removedValue = list2.removeLast()
-    println("After removing last2 node: $list2")
-    println("Removed value: $removedValue")
-
-
-    val index = 2
-    val node = list2.nodeAt(index - 1)!!
-    removedValue = list2.removeAfter(node)
-    println("After removing at index $index: $list2")
-    println("Removed value: $removedValue")
-*/
-
-    val list = LinkedListIterable<Int>()
-    list.push(3)
-    list.push(2)
-    list.push(1)
-    println(list)
     for (item in list) {
         println("Double: ${item * 2}")
     }

@@ -59,7 +59,13 @@
       - Map
 - [x] Chapter 2
     - [Complexity](src/main/data_Structures_algorithms_in_kotlin_book/ch2_02_Complexity)
-- [ ] Chapter 3
+- [x] Chapter 3
     - [Linked List](src/main/data_Structures_algorithms_in_kotlin_book/ch3_03_Linked_List)
-        
+      - Reverse a linked list challenge
+      - The item in the middle challenge
+      - Reverse a linked list challenge
+      - Merging two linked lists challenge
+- [ ] Chapter 4
+    - [Stack](src/main/data_Structures_algorithms_in_kotlin_book/ch4_04_Stack)
+
               
