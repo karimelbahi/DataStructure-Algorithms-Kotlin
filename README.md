@@ -69,7 +69,7 @@
     - [Stack](src/main/data_Structures_algorithms_in_kotlin_book/ch4_04_Stack)
       - Reverse a linked list challenge
       - the parentheses validation
-- [x] Chapter 4
+- [ ] Chapter 5
     - [Queues](src/main/data_Structures_algorithms_in_kotlin_book/ch5_05_Queues)
 
 
