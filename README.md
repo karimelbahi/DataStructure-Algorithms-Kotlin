@@ -65,7 +65,12 @@
       - The item in the middle challenge
       - Reverse a linked list challenge
       - Merging two linked lists challenge
-- [ ] Chapter 4
+- [x] Chapter 4
     - [Stack](src/main/data_Structures_algorithms_in_kotlin_book/ch4_04_Stack)
+      - Reverse a linked list challenge
+      - the parentheses validation
+- [x] Chapter 4
+    - [Queues](src/main/data_Structures_algorithms_in_kotlin_book/ch5_05_Queues)
+
 
               
